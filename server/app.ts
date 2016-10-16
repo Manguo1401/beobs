@@ -48,6 +48,10 @@ if (app.get("env") === "development") {
     app.use(express.static(join(__dirname, '../node_modules')));
     app.use(express.static(join(__dirname, '../tools')));
 
+    app.all('/*', function(req, res) {
+        res.sendfile('public/index.html');
+    });
+
     app.use(function(err, req: express.Request, res: express.Response, next: express.NextFunction) {
         res.status(err.status || 500);
         res.json({

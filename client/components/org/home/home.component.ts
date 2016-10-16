@@ -1,8 +1,9 @@
 import { Component } from '@angular/core'
 
 @Component({
-	selector: 'my-attrs-data-choice',
-	templateUrl: 'client/components/org/home/home.component.html'
+	moduleId : module.id,
+	selector: 'my-home-component',
+	templateUrl: 'home.component.html'
 })
 
 export class HomeOrgComponent {}

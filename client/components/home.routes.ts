@@ -8,16 +8,13 @@ import { PageNotFound } from './page_not_found.component'
 
 @NgModule({
 	imports: [
-		RouterModule.forRoot([{
-			path: 'accueil',
+		RouterModule.forChild([{
+			path: 'home',
 			component: HomeMainPage
 		},{
 			path: '',
-			redirectTo: 'accueil',
+			redirectTo: 'home',
 			pathMatch: 'full'
-		},{
-			path: '**',
-			component: PageNotFound
 		}])
 	],
 	exports: [
@@ -26,4 +23,3 @@ import { PageNotFound } from './page_not_found.component'
 })
 
 export class HomeRoutes {}
-

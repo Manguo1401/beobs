@@ -1,8 +1,9 @@
 import { Component } from '@angular/core'
 
 @Component({
+	moduleId : module.id,
 	selector: 'my-attrs-data-choice',
-	templateUrl: 'client/components/org/data_choice/data_choice_page.component.html'
+	templateUrl: 'data_choice_page.component.html'
 })
 
 export class DataChoicePage {}

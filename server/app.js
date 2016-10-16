@@ -35,6 +35,9 @@ app.get('/home/get_categories', function (req, res) {
 if (app.get("env") === "development") {
     app.use(express.static(path_1.join(__dirname, '../node_modules')));
     app.use(express.static(path_1.join(__dirname, '../tools')));
+    app.all('/*', function (req, res) {
+        res.sendfile('public/index.html');
+    });
     app.use(function (err, req, res, next) {
         res.status(err.status || 500);
         res.json({
