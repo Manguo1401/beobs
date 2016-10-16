@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/platform-browser', "angular2-jwt", "@angular/http", "ng-semantic", './app.component', './components/home_main_page.component', './components/org/home_org_page.component', './components/org/data_items/navbar_data_items.component', './components/org/data_items/attrs_data_choice_page.component', './components/org/data_items/localisation_choice_page.component', './components/org/data_items/species_choice_page.component', "./routes", "./services/modules/categories.service"], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/platform-browser', "angular2-jwt", "@angular/http", "ng-semantic", './app.component', './components/home_main_page.component', './components/page_not_found.component', "./components/org/org.routes", "./components/home.routes", './components/org/home_page_org.component', './components/org/home/home.component', './components/org/data_choice/data_choice_page.component', "./services/modules/categories.service"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['@angular/core', '@angular/platform-browser', "angular2-jwt", "
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, platform_browser_1, angular2_jwt_1, http_1, ng_semantic_1, app_component_1, home_main_page_component_1, home_org_page_component_1, navbar_data_items_component_1, attrs_data_choice_page_component_1, localisation_choice_page_component_1, species_choice_page_component_1, routes_1, categories_service_1;
+    var core_1, platform_browser_1, angular2_jwt_1, http_1, ng_semantic_1, app_component_1, home_main_page_component_1, page_not_found_component_1, org_routes_1, home_routes_1, home_page_org_component_1, home_component_1, data_choice_page_component_1, categories_service_1;
     var AppModule;
     return {
         setters:[
@@ -35,23 +35,23 @@ System.register(['@angular/core', '@angular/platform-browser', "angular2-jwt", "
             function (home_main_page_component_1_1) {
                 home_main_page_component_1 = home_main_page_component_1_1;
             },
-            function (home_org_page_component_1_1) {
-                home_org_page_component_1 = home_org_page_component_1_1;
+            function (page_not_found_component_1_1) {
+                page_not_found_component_1 = page_not_found_component_1_1;
             },
-            function (navbar_data_items_component_1_1) {
-                navbar_data_items_component_1 = navbar_data_items_component_1_1;
+            function (org_routes_1_1) {
+                org_routes_1 = org_routes_1_1;
             },
-            function (attrs_data_choice_page_component_1_1) {
-                attrs_data_choice_page_component_1 = attrs_data_choice_page_component_1_1;
+            function (home_routes_1_1) {
+                home_routes_1 = home_routes_1_1;
             },
-            function (localisation_choice_page_component_1_1) {
-                localisation_choice_page_component_1 = localisation_choice_page_component_1_1;
+            function (home_page_org_component_1_1) {
+                home_page_org_component_1 = home_page_org_component_1_1;
             },
-            function (species_choice_page_component_1_1) {
-                species_choice_page_component_1 = species_choice_page_component_1_1;
+            function (home_component_1_1) {
+                home_component_1 = home_component_1_1;
             },
-            function (routes_1_1) {
-                routes_1 = routes_1_1;
+            function (data_choice_page_component_1_1) {
+                data_choice_page_component_1 = data_choice_page_component_1_1;
             },
             function (categories_service_1_1) {
                 categories_service_1 = categories_service_1_1;
@@ -66,7 +66,8 @@ System.register(['@angular/core', '@angular/platform-browser', "angular2-jwt", "
                             platform_browser_1.BrowserModule,
                             http_1.HttpModule,
                             ng_semantic_1.NgSemanticModule,
-                            routes_1.routing
+                            org_routes_1.OrgRoutes,
+                            home_routes_1.HomeRoutes //A importer en dernier pour les routes
                         ],
                         providers: [
                             angular2_jwt_1.provideAuth({
@@ -79,11 +80,10 @@ System.register(['@angular/core', '@angular/platform-browser', "angular2-jwt", "
                         declarations: [
                             app_component_1.AppComponent,
                             home_main_page_component_1.HomeMainPage,
-                            home_org_page_component_1.HomeOrgPage,
-                            navbar_data_items_component_1.DataItemsNavbar,
-                            attrs_data_choice_page_component_1.AttrsDataChoicePage,
-                            localisation_choice_page_component_1.LocalisationChoicePage,
-                            species_choice_page_component_1.SpeciesChoicePage
+                            page_not_found_component_1.PageNotFound,
+                            home_page_org_component_1.HomePageOrg,
+                            home_component_1.HomeOrgComponent,
+                            data_choice_page_component_1.DataChoicePage
                         ],
                         bootstrap: [app_component_1.AppComponent],
                         schemas: [

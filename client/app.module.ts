@@ -6,15 +6,20 @@ import { NgSemanticModule } from "ng-semantic"
 
 import { AppComponent }  from './app.component'
 import { HomeMainPage } from './components/home_main_page.component'
-import { HomeOrgPage } from './components/org/home_org_page.component'
 
-//Composants page organisme
-import { DataItemsNavbar } from './components/org/data_items/navbar_data_items.component'
-import { AttrsDataChoicePage } from './components/org/data_items/attrs_data_choice_page.component'
-import { LocalisationChoicePage } from './components/org/data_items/localisation_choice_page.component'
-import { SpeciesChoicePage } from './components/org/data_items/species_choice_page.component'
 
-import { routing } from "./routes";
+import { PageNotFound } from './components/page_not_found.component'
+
+
+//Importation des routes
+import { OrgRoutes } from "./components/org/org.routes"
+import { HomeRoutes } from "./components/home.routes" //A mettre en dernier pour les routes
+
+
+//Compnsants pour les organismes
+import { HomePageOrg } from './components/org/home_page_org.component'
+import { HomeOrgComponent } from './components/org/home/home.component'
+import { DataChoicePage } from './components/org/data_choice/data_choice_page.component'
 
 import { ServiceCaterogiesModules } from "./services/modules/categories.service"
 
@@ -23,7 +28,8 @@ import { ServiceCaterogiesModules } from "./services/modules/categories.service"
         BrowserModule,
         HttpModule,
         NgSemanticModule,
-        routing
+        OrgRoutes,
+        HomeRoutes //A importer en dernier pour les routes
     ],
     providers: [
         provideAuth({
@@ -36,11 +42,10 @@ import { ServiceCaterogiesModules } from "./services/modules/categories.service"
     declarations: [ 
         AppComponent,
         HomeMainPage,
-        HomeOrgPage,
-        DataItemsNavbar,
-        AttrsDataChoicePage,
-        LocalisationChoicePage,
-        SpeciesChoicePage
+        PageNotFound,
+        HomePageOrg,
+        HomeOrgComponent,
+        DataChoicePage
     ],
     bootstrap:    [ AppComponent ],
     schemas: [

@@ -11,27 +11,27 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var HomeOrgNavbar;
+    var PageNotFound;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            HomeOrgNavbar = (function () {
-                function HomeOrgNavbar() {
+            PageNotFound = (function () {
+                function PageNotFound() {
                 }
-                HomeOrgNavbar = __decorate([
+                PageNotFound = __decorate([
                     core_1.Component({
-                        selector: 'my-home-org-navbar',
-                        templateUrl: 'client/components/org/home_org_navbar.component.html'
+                        selector: 'my-page-not-found',
+                        templateUrl: 'client/components/page_not_found.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], HomeOrgNavbar);
-                return HomeOrgNavbar;
+                ], PageNotFound);
+                return PageNotFound;
             }());
-            exports_1("HomeOrgNavbar", HomeOrgNavbar);
+            exports_1("PageNotFound", PageNotFound);
         }
     }
 });
-//# sourceMappingURL=home_org_navbar.component.js.map
+//# sourceMappingURL=page_not_found.component.js.map

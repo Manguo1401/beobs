@@ -11,27 +11,27 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var SpeciesChoicePage;
+    var HomeOrgComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            SpeciesChoicePage = (function () {
-                function SpeciesChoicePage() {
+            HomeOrgComponent = (function () {
+                function HomeOrgComponent() {
                 }
-                SpeciesChoicePage = __decorate([
+                HomeOrgComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-species-choice',
-                        templateUrl: 'client/components/org/data_items/species_choice_page.component.html'
+                        selector: 'my-attrs-data-choice',
+                        templateUrl: 'client/components/org/home/home.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], SpeciesChoicePage);
-                return SpeciesChoicePage;
+                ], HomeOrgComponent);
+                return HomeOrgComponent;
             }());
-            exports_1("SpeciesChoicePage", SpeciesChoicePage);
+            exports_1("HomeOrgComponent", HomeOrgComponent);
         }
     }
 });
-//# sourceMappingURL=species_choice_page.component.js.map
+//# sourceMappingURL=home.component.js.map

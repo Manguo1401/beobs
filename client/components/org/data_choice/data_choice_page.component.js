@@ -11,27 +11,27 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var DataItemsNavbar;
+    var DataChoicePage;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            DataItemsNavbar = (function () {
-                function DataItemsNavbar() {
+            DataChoicePage = (function () {
+                function DataChoicePage() {
                 }
-                DataItemsNavbar = __decorate([
+                DataChoicePage = __decorate([
                     core_1.Component({
-                        selector: 'my-data-items-navbar',
-                        templateUrl: 'client/components/org/data_items/navbar_data_items.component.html'
+                        selector: 'my-attrs-data-choice',
+                        templateUrl: 'client/components/org/data_choice/data_choice_page.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], DataItemsNavbar);
-                return DataItemsNavbar;
+                ], DataChoicePage);
+                return DataChoicePage;
             }());
-            exports_1("DataItemsNavbar", DataItemsNavbar);
+            exports_1("DataChoicePage", DataChoicePage);
         }
     }
 });
-//# sourceMappingURL=navbar_data_items.component.js.map
+//# sourceMappingURL=data_choice_page.component.js.map

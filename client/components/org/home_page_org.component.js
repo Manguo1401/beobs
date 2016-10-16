@@ -11,27 +11,27 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var LocalisationChoicePage;
+    var HomePageOrg;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            LocalisationChoicePage = (function () {
-                function LocalisationChoicePage() {
+            HomePageOrg = (function () {
+                function HomePageOrg() {
                 }
-                LocalisationChoicePage = __decorate([
+                HomePageOrg = __decorate([
                     core_1.Component({
-                        selector: 'my-localisation-choice',
-                        templateUrl: 'client/components/org/data_items/localisation_choice_page.component.html'
+                        selector: 'my-home-page-org',
+                        templateUrl: 'client/components/org/home_page_org.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], LocalisationChoicePage);
-                return LocalisationChoicePage;
+                ], HomePageOrg);
+                return HomePageOrg;
             }());
-            exports_1("LocalisationChoicePage", LocalisationChoicePage);
+            exports_1("HomePageOrg", HomePageOrg);
         }
     }
 });
-//# sourceMappingURL=localisation_choice_page.component.js.map
+//# sourceMappingURL=home_page_org.component.js.map
