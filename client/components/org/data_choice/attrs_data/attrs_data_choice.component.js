@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var categories_service_1 = require('./../../../../services/modules/categories.service');
+var categories_service_1 = require('./../../../../services/attrs_data/categories.service');
 var AttrsDataChoiceOrgComponent = (function () {
     function AttrsDataChoiceOrgComponent(serviceCategories) {
         this.serviceCategories = serviceCategories;

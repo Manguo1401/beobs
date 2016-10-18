@@ -2,7 +2,7 @@ import { Component } from '@angular/core'
 
 import { Categorie } from './../../../../objects/categorie'
 
-import { ServiceCaterogiesModules } from './../../../../services/modules/categories.service'
+import { ServiceCaterogiesModules } from './../../../../services/attrs_data/categories.service'
 
 @Component({
 	moduleId : module.id,

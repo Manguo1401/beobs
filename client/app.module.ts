@@ -12,7 +12,7 @@ import { AppRoutes } from "./app.routes" //A mettre en dernier pour les routes
 import { HomeModule } from "./components/home.module" //A mettre en dernier pour les routes
 import { OrgModule } from "./components/org/org.module" //A mettre en dernier pour les routes
 
-import { ServiceCaterogiesModules } from "./services/modules/categories.service"
+import { ServiceCaterogiesModules } from "./services/attrs_data/categories.service"
 
 @NgModule({
     imports: [

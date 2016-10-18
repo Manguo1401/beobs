@@ -17,7 +17,7 @@ var page_not_found_component_1 = require('./components/page_not_found.component'
 var app_routes_1 = require("./app.routes"); //A mettre en dernier pour les routes
 var home_module_1 = require("./components/home.module"); //A mettre en dernier pour les routes
 var org_module_1 = require("./components/org/org.module"); //A mettre en dernier pour les routes
-var categories_service_1 = require("./services/modules/categories.service");
+var categories_service_1 = require("./services/attrs_data/categories.service");
 var AppModule = (function () {
     function AppModule() {
     }

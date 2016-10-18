@@ -15,19 +15,7 @@ app.use('/client', express.static(path_1.join(__dirname, '../client')));
 ////////////////////
 //DATABASE LOADING//
 ////////////////////
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://test:test@ds013456.mlab.com:13456/ng2test');
-var categorieSchema = mongoose.Schema({
-    name: String
-});
-var Categorie = mongoose.model('categories_modules', categorieSchema);
-app.get('/home/get_categories', function (req, res) {
-    Categorie.find({}, function (err, json) {
-        if (err)
-            return console.error(err);
-        res.send(json);
-    });
-});
+require('./db/requests')(app);
 ///////////////////////////////////
 // error handlers
 // development error handler
@@ -36,7 +24,7 @@ if (app.get("env") === "development") {
     app.use(express.static(path_1.join(__dirname, '../node_modules')));
     app.use(express.static(path_1.join(__dirname, '../tools')));
     app.all('/*', function (req, res) {
-        res.sendfile('public/index.html');
+        res.sendFile(path_1.join(__dirname, '../public', 'index.html'));
     });
     app.use(function (err, req, res, next) {
         res.status(err.status || 500);
