@@ -14,9 +14,10 @@ var http_1 = require("@angular/http");
 var app_component_1 = require('./app.component');
 var page_not_found_component_1 = require('./components/page_not_found.component');
 //Importation des routes
-var app_routes_1 = require("./app.routes"); //A mettre en dernier pour les routes
-var home_module_1 = require("./components/home.module"); //A mettre en dernier pour les routes
-var org_module_1 = require("./components/org/org.module"); //A mettre en dernier pour les routes
+var app_routes_1 = require("./app.routes");
+var home_module_1 = require("./components/home.module");
+var org_module_1 = require("./components/org/org.module");
+var admin_module_1 = require("./components/admin/admin.module");
 var categories_service_1 = require("./services/attrs_data/categories.service");
 var AppModule = (function () {
     function AppModule() {
@@ -28,6 +29,7 @@ var AppModule = (function () {
                 http_1.HttpModule,
                 home_module_1.HomeModule,
                 org_module_1.OrgModule,
+                admin_module_1.AdminModule,
                 app_routes_1.AppRoutes //A placer après les modules annexes
             ],
             providers: [

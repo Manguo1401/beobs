@@ -8,9 +8,10 @@ import { AppComponent }  from './app.component'
 import { PageNotFound } from './components/page_not_found.component'
 
 //Importation des routes
-import { AppRoutes } from "./app.routes" //A mettre en dernier pour les routes
-import { HomeModule } from "./components/home.module" //A mettre en dernier pour les routes
-import { OrgModule } from "./components/org/org.module" //A mettre en dernier pour les routes
+import { AppRoutes } from "./app.routes"
+import { HomeModule } from "./components/home.module"
+import { OrgModule } from "./components/org/org.module"
+import { AdminModule } from "./components/admin/admin.module"
 
 import { ServiceCaterogiesModules } from "./services/attrs_data/categories.service"
 
@@ -20,6 +21,7 @@ import { ServiceCaterogiesModules } from "./services/attrs_data/categories.servi
         HttpModule,
         HomeModule,
         OrgModule,
+        AdminModule,
         AppRoutes //A placer après les modules annexes
     ],
     providers: [

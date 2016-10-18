@@ -1,0 +1,8 @@
+<h1>Attrs data management</h1>
+
+<input [(ngModel)]="newCategory" />
+<button (click)="addCategory(newCategory)">Ajouter nouvelle catégorie</button>
+
+<ul *ngFor="let categorie of categories">
+	<button class="ui inverted brown button">{{categorie.name}}</button>
+</ul>
