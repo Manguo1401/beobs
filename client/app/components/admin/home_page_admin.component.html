@@ -1,0 +1,25 @@
+<div class="ui padded one column grid">
+	<div class="centered row">
+		<h1 class="ui header">Panneau d'administration</h1>
+	</div>
+	<div class="column">
+		
+		<div class="row">
+			<div class="ui secondary pointing menu">
+				<a [routerLink]="['./home']" routerLinkActive="active" class="item">Accueil admin</a>
+				<a [routerLink]="['./docs']" routerLinkActive="active" class="item">Gestion des documents</a>
+				<div class="right menu">
+					<a [routerLink]="['/home']" routerLinkActive="active" class="ui item">Retour à l'accueil principal</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			
+		</div>
+		<div class="row">
+			<router-outlet></router-outlet>
+		</div>
+	</div>
+</div>
+	
+
