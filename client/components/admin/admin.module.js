@@ -17,6 +17,7 @@ var home_page_admin_component_1 = require('./home_page_admin.component');
 var docs_page_component_1 = require('./docs/docs_page.component');
 var home_admin_component_1 = require('./home/home_admin.component');
 var attrs_data_component_1 = require('./docs/attrs_data/attrs_data.component');
+var species_management_component_1 = require('./docs/species/species_management.component');
 var AdminModule = (function () {
     function AdminModule() {
     }
@@ -31,7 +32,8 @@ var AdminModule = (function () {
                 home_page_admin_component_1.HomePageAdmin,
                 home_admin_component_1.HomeAdminComponent,
                 docs_page_component_1.DocsAdminPage,
-                attrs_data_component_1.AttrsDataAdminComponent
+                attrs_data_component_1.AttrsDataAdminComponent,
+                species_management_component_1.SpeciesManagementComponent
             ],
             providers: []
         }), 

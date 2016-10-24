@@ -1,5 +1,13 @@
-<h1>Docs component</h1>
-
-<a routerLink="./attrs_data" routerLinkActive="active">Gestion des données attributaires</a>
-
-<router-outlet></router-outlet>
+<div class="ui padded one column grid">
+	<div class="column">
+		<div class="row">
+			<div class="ui top attached tabular menu">
+				<a routerLink="./attrs_data" routerLinkActive="active" class="item">Données attributaires</a>
+				<a routerLink="./species_management" routerLinkActive="active" class="item">Espèces</a>
+			</div>
+		</div>
+		<div class="row">
+			<router-outlet></router-outlet>
+		</div>
+	</div>
+</div>

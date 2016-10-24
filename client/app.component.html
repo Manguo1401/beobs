@@ -1,5 +1,13 @@
-<a routerLink="./home" routerLinkActive="active">Accueil</a>
-<a routerLink="./org" routerLinkActive="active">Organisme</a>
-<a routerLink="./admin" routerLinkActive="active">Admin</a>
+<div class="ui padded one column grid">
+	<div class="column no-padding">
+		<div class="row">
+			<div class="ui green huge menu">
+				<a routerLink="./home" routerLinkActive="active" class="item">Accueil</a>
+				<a routerLink="./org" routerLinkActive="active" class="item">Organisme</a>
+				<a routerLink="./admin" routerLinkActive="active" class="item">Admin</a>
+			</div>
+		</div>
+		<router-outlet></router-outlet>
+	</div>
+</div>
 
-<router-outlet></router-outlet>

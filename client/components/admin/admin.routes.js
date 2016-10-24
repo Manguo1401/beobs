@@ -14,6 +14,7 @@ var home_page_admin_component_1 = require('./home_page_admin.component');
 var home_admin_component_1 = require('./home/home_admin.component');
 var docs_page_component_1 = require('./docs/docs_page.component');
 var attrs_data_component_1 = require('./docs/attrs_data/attrs_data.component');
+var species_management_component_1 = require('./docs/species/species_management.component');
 var AdminRoutes = (function () {
     function AdminRoutes() {
     }
@@ -36,6 +37,9 @@ var AdminRoutes = (function () {
                                         path: '',
                                         redirectTo: 'attrs_data',
                                         pathMatch: 'full'
+                                    }, {
+                                        path: 'species_management',
+                                        component: species_management_component_1.SpeciesManagementComponent
                                     }]
                             }, {
                                 path: '',

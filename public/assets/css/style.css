@@ -8,3 +8,7 @@ body {
 .sebm-google-map-container {
 	height: 300px;
 }
+
+.no-padding{
+	padding: 0px !important;
+}

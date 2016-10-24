@@ -1,8 +1,8 @@
 "use strict";
-var Categorie = (function () {
-    function Categorie() {
+var Category = (function () {
+    function Category() {
     }
-    return Categorie;
+    return Category;
 }());
-exports.Categorie = Categorie;
+exports.Category = Category;
 //# sourceMappingURL=categorie.js.map

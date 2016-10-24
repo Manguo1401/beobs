@@ -10,6 +10,7 @@ import { DocsAdminPage } from './docs/docs_page.component'
 
 import { HomeAdminComponent } from './home/home_admin.component'
 import { AttrsDataAdminComponent } from './docs/attrs_data/attrs_data.component'
+import { SpeciesManagementComponent } from './docs/species/species_management.component'
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AttrsDataAdminComponent } from './docs/attrs_data/attrs_data.component'
 		HomePageAdmin,
 		HomeAdminComponent,
 		DocsAdminPage,
-		AttrsDataAdminComponent
+		AttrsDataAdminComponent,
+		SpeciesManagementComponent
 	],
 	providers: [
 		

@@ -1,6 +1,8 @@
 var mongoose = require('../dbconfig');
 
-var categorieSchema = mongoose.Schema({
+var Schema = mongoose.Schema;
+var categorieSchema = Schema({
+	_id: Schema.ObjectId,
     name: String
 });
   

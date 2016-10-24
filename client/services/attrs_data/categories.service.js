@@ -22,6 +22,26 @@ var ServiceCaterogiesModules = (function () {
             .then(function (response) { return response.json(); } /*; console.log(response.json())}*/)
             .catch(this.handleError);
     };
+    ServiceCaterogiesModules.prototype.createCategory = function (newCat) {
+        return this.http.post('admin/api/addCategory', JSON.stringify({ name: newCat }), { headers: this.headers })
+            .toPromise()
+            .then(function (res) { return res.json(); })
+            .catch(this.handleError);
+    };
+    ServiceCaterogiesModules.prototype.editCategory = function (editedCategory) {
+        var url = 'admin/api/editCategory/' + editedCategory._id;
+        return this.http.put(url, JSON.stringify({ name: editedCategory.name }), { headers: this.headers })
+            .toPromise()
+            .then(function () { return null; })
+            .catch(this.handleError);
+    };
+    ServiceCaterogiesModules.prototype.deleteCategory = function (id) {
+        var url = 'admin/api/deleteCategory/' + id;
+        return this.http.delete(url, { headers: this.headers })
+            .toPromise()
+            .then(function () { return null; })
+            .catch(this.handleError);
+    };
     ServiceCaterogiesModules.prototype.handleError = function (error) {
         console.error('An error occurred', error); // for demo purposes only
         return Promise.reject(error.message || error);

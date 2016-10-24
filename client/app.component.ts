@@ -5,7 +5,8 @@ import "rxjs/add/operator/map";
 @Component({
 	moduleId : module.id,
     selector: "app",
-    templateUrl: 'app.component.html'
+    templateUrl: 'app.component.html',
+    styleUrls: ['app.style.css']
 })
 
 export class AppComponent {

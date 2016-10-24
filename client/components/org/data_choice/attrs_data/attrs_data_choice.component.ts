@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
 
-import { Categorie } from './../../../../objects/categorie'
+import { Category } from './../../../../objects/categorie'
 
 import { ServiceCaterogiesModules } from './../../../../services/attrs_data/categories.service'
 
@@ -11,7 +11,7 @@ import { ServiceCaterogiesModules } from './../../../../services/attrs_data/cate
 })
 
 export class AttrsDataChoiceOrgComponent {
-		categories: Categorie[] = [];
+		categories: Category[] = [];
 
 		constructor(
 			private serviceCategories: ServiceCaterogiesModules
