@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { HttpModule } from "@angular/http"
-import { NgSemanticModule } from 'ng-semantic';
+/*import { NgSemanticModule } from 'ng-semantic';*/
 
 import { AppComponent }  from './app.component'
 
@@ -19,7 +19,7 @@ import { ServiceCaterogiesModules } from "./services/attrs_data/categories.servi
 @NgModule({
     imports: [
         BrowserModule,
-        NgSemanticModule,
+/*        NgSemanticModule,*/
         HttpModule,
         HomeModule,
         OrgModule,
@@ -29,7 +29,7 @@ import { ServiceCaterogiesModules } from "./services/attrs_data/categories.servi
     providers: [
         ServiceCaterogiesModules
     ],
-    declarations: [ 
+    declarations: [
         AppComponent,
         PageNotFound
     ],

@@ -3,7 +3,7 @@ import { Component } from '@angular/core'
 import { Category } from './../../../../objects/categorie'
 
 import { ServiceCaterogiesModules } from './../../../../services/attrs_data/categories.service'
-	
+
 declare var $:any;
 
 @Component({
@@ -29,9 +29,9 @@ export class AttrsDataAdminComponent {
 	ngOnInit(): void {
 		this.serviceCategories.getCategories()
 		.then(categories => this.categories = categories);
-	} 
+	}
 
-	addCategory(newCat) {
+	addCategory(newCat:any) {
 		//On enlève les espaces blanc s'il y en a
 		newCat = newCat.trim();
 
@@ -61,12 +61,12 @@ export class AttrsDataAdminComponent {
 		;
 	}
 
-	validateEditCategory(editedCategory) {
+	validateEditCategory(editedCategory:any) {
 		this.serviceCategories.editCategory(editedCategory)
 		.then(() => {
 			this.selectedCategory = null;
 		});
-		
+
 		$('.page.dimmer:first')
 			.dimmer('toggle')
 		;
