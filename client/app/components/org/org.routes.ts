@@ -5,6 +5,9 @@ import { HomePageOrg } from './home_page_org.component'
 import { DataChoicePage } from './data_choice/data_choice_page.component'
 import { HomeOrgComponent } from './home/home.component'
 
+import { SubscribeOrgPage } from './subscribe/subscribe_org.component'
+
+
 import { AttrsDataChoiceOrgComponent } from './data_choice/attrs_data/attrs_data_choice.component'
 import { LocationChoiceOrgComponent } from './data_choice/location_data/location_choice.component'
 import { SpeciesChoiceOrgComponent } from './data_choice/species_data/species_choice.component'
@@ -13,7 +16,7 @@ import { SpeciesChoiceOrgComponent } from './data_choice/species_data/species_ch
 @NgModule({
 	imports: [
 		RouterModule.forChild([{
-			path: 'org',
+			path: 'organisme',
 			component: HomePageOrg,
 			children: [{
 				path: 'home',
@@ -35,6 +38,9 @@ import { SpeciesChoiceOrgComponent } from './data_choice/species_data/species_ch
 					redirectTo: 'attrs_data',
 					pathMatch: 'full'
 				}]
+			},{
+				path: 'subscribe',
+				component: SubscribeOrgPage
 			},{
 				path: '',
 				redirectTo: 'home',
