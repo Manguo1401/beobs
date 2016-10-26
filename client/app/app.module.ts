@@ -15,6 +15,8 @@ import { OrgModule } from "./components/org/org.module"
 import { AdminModule } from "./components/admin/admin.module"
 
 import { ServiceCaterogiesModules } from "./services/attrs_data/categories.service"
+import { ServiceOrganismsModules } from "./services/org_subscribe/org.service"
+
 
 @NgModule({
     imports: [
