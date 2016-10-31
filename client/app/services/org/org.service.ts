@@ -15,8 +15,8 @@ export class ServiceOrganismsModules {
   constructor(private http: Http) { }
 
 
-  createOrganisme(newCat: string): Promise<Organism> {
-    return this.http.post('admin/api/addCategory', JSON.stringify({ name: newCat }), { headers: this.headers })
+  createOrganisme(newOrg: string): Promise<Organism> {
+    return this.http.post('admin/api/createOrganism', JSON.stringify({ name: newOrg }), { headers: this.headers })
       .toPromise()
       .then(res => res.json())
       .catch(this.handleError);

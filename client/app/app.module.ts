@@ -15,7 +15,7 @@ import { OrgModule } from "./components/org/org.module"
 import { AdminModule } from "./components/admin/admin.module"
 
 import { ServiceCaterogiesModules } from "./services/attrs_data/categories.service"
-import { ServiceOrganismsModules } from "./services/org_subscribe/org.service"
+import { ServiceOrganismsModules } from "./services/org/org.service"
 
 
 @NgModule({
@@ -29,7 +29,8 @@ import { ServiceOrganismsModules } from "./services/org_subscribe/org.service"
         AppRoutes //A placer après les modules annexes
     ],
     providers: [
-        ServiceCaterogiesModules
+        ServiceCaterogiesModules,
+        ServiceOrganismsModules
     ],
     declarations: [
         AppComponent,
